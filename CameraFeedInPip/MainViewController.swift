@@ -67,9 +67,7 @@ class MainViewController: UIViewController {
         ])
         // Do any additional setup after loading the view.
     }
-    
-    // MARK: Het beste is om een nieuwe instantie te maken van WebRTCClient voor het opzetten van meedere peers/streams.
-    
+
     @objc
     func goToOnSiteView() {
         let webRTCClient = WebRTCClient(iceServers: self.config.webRTCIceServers)
@@ -93,15 +91,4 @@ class MainViewController: UIViewController {
         navigationController?.pushViewController(viewController, animated: true)
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
